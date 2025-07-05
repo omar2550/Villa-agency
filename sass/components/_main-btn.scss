@@ -1,0 +1,16 @@
+.main-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #FFF;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: 0.3s ease-in-out;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover:not(.active) {
+        transform: translateY(-4px);
+    }
+    &.active {
+        background-color: var(--primary-color);
+    }
+}

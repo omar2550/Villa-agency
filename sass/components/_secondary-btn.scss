@@ -1,0 +1,15 @@
+.secondary-btn {
+    height: 40px;
+    padding: 0 30px;
+    background-color: black;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        background-color: var(--primary-color);
+    }
+}
