@@ -1,0 +1,7 @@
+mixin landing(pagTitle)
+    .landing.text-center
+        .link.bg-white.mx-auto
+            span 
+                a(href="index.html" class="text-uppercase") home 
+                | / #{pagTitle.toUpperCase()}
+        h1.mt-5.text-light #{pagTitle.toUpperCase()}

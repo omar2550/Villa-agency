@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="sass/contact.css">
+    <link rel="stylesheet" href="sass/bootstrap.min.css">
+    <link rel="stylesheet" href="sass/all.min.css">
+  </head>
+  <body>
+    <header> 
+      <div class="info d-none d-md-block border-bottom"> 
+        <div class="container d-flex justify-content-between align-items-center py-2"> 
+          <div class="mail d-flex align-items-center gap-2">
+            <div><i class="fa-solid fa-envelope primary px-2 fs-5"> </i><a href="#"> info@company.com</a></div>
+            <div> <i class="fa-solid fa-map primary px-2 fs-5"></i><a href="#"> Sunny Isles Beach, FL 33160</a></div>
+          </div>
+          <div class="social"><a class="mx-1" href="#"> <i class="fa-brands fa-facebook-f"></i></a><a class="mx-1" href="#"> <i class="fa-brands fa-twitter"></i></a><a class="mx-1" href="#"> <i class="fa-brands fa-instagram"></i></a><a class="mx-1" href="#"> <i class="fa-brands fa-linkedin-in"></i></a></div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container py-3"> <a class="logo fs-2 text-uppercase fw-bold text-dark" href="index.html">Villa</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item px-2"><a class="nav-link Home active" aria-current="page" href="index.html">Home</a></li>
+              <li class="nav-item px-2"><a class="nav-link Properties" aria-current="page" href="properties.html">Properties</a></li>
+              <li class="nav-item px-2"><a class="nav-link PropertyDetails" aria-current="page" href="property-details.html">Property Details</a></li>
+              <li class="nav-item px-2"><a class="nav-link ContactUs" aria-current="page" href="contact.html">Contact Us</a></li>
+              <li class="nav-item px-2 spatial-btn"><span><i class="fa-solid fa-calendar"></i></span><a class="nav-link content" aria-current="page" href="index.html"> Schedule a visit</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="JS/header.js"></script>
+    <script>
+      document
+          .querySelectorAll("header nav .nav-link")
+          .forEach((link) => link.classList.remove("active"));
+      
+      
+      document
+          .querySelector(`header nav .${document.title.split(" ").join("")}`).classList.add("active");
+    </script>
+    <div class="landing text-center">
+      <div class="link bg-white mx-auto"><span> <a class="text-uppercase" href="index.html">home </a>/ CONTACT US</span></div>
+      <h1 class="mt-5 text-light">CONTACT US</h1>
+    </div>
+    <div class="contact my-5 py-5 mb-5 pb-5"> 
+      <div class="container my-5">
+        <div class="row pb-5">
+          <div class="col-lg-6">
+            <div class="main-header mb-5"><span>Contact Us</span>
+              <h2 class="fw-bold mt-3">Get In Touch<br>With Our Agents</h2>
+            </div>
+            <p class="text m-0 lh-lg">When you really need to download free CSS templates, please remember our website TemplateMo. Also, tell your friends about our website. Thank you for visiting. There is a variety of Bootstrap HTML CSS templates on our website. If you need more information, please contact us.</p>
+            <div class="mt-5">
+              <div class="info p-4 rounded-3 d-flex align-items-center gap-4 mb-4"><img src="Images/phone-icon.png" alt="">
+                <p class="fw-bold fs-5 m-0">010-020-0340<span class="d-block">Phone Number</span></p>
+              </div>
+              <div class="info p-4 rounded-3 d-flex align-items-center gap-4"><img src="Images/email-icon.png" alt="">
+                <p class="fw-bold fs-5 m-0">info@villa.co<span class="d-block">Business Email</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form class="rounded-3 bg-white mt-5 mt-lg-0" action="">
+              <div class="mb-4">
+                <label for="">Full Name</label>
+                <input class="form-control mt-2 rounded-pill w-100" type="text" placeholder="Your Name..." required>
+              </div>
+              <div class="mb-4"> 
+                <label for="">Email Address</label>
+                <input class="form-control mt-2 rounded-pill w-100" type="text" placeholder="Your Email..." required>
+              </div>
+              <div class="mb-4"> 
+                <label for="">Subject</label>
+                <input class="form-control mt-2 rounded-pill w-100" type="text" placeholder="Your Subject..." required>
+              </div>
+              <div class="pb-5"> 
+                <label for="">Message</label>
+                <textarea class="form-control mt-2 rounded-4 w-100" name="" placeholder="Your Message..." required></textarea>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5">Contact Us</button>
+            </form>
+          </div>
+        </div>
+        <div class="mt-5"> 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth" frameborder="0" width="100%" height="500px" style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);"></iframe>
+        </div>
+      </div>
+    </div>
+    <footer class="p-4">
+      <div class="text-center">
+        <p class="my-3">Copyright &copy; 2025 Villa Agency Co., Ltd. All rights reserved.</p>
+        <p>Design: <a href="https://templatemo.com/" target="_black">TemplateMo </a></p>
+      </div>
+    </footer>
+  </body>
+  <script src="JS/bootstrap.bundle.min.js"></script>
+</html>

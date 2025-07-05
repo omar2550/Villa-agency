@@ -1,0 +1,212 @@
+extends index
+block pageTitleAndStyle   
+    title Properties
+    link(rel="stylesheet" href="sass/properties.css")
+include includes/mixins
+block content
+    +landing("Properties")
+    //- Start Work Section
+    .work.my-5.py-5
+        .container
+            .d-flex.flex-wrap.mb-5.gap-4.align-items-center.justify-content-center 
+                span(class="main-btn active" data-prop=".vila-box") Show All
+                span(class="main-btn" data-prop=".apartment") Apartment
+                span(class="main-btn" data-prop=".vila") Vila House
+                span(class="main-btn" data-prop=".penthouse") Penthouse
+            .row.g-5.mb-5.position-relative
+                .col-lg-4.col-md-6
+                    .vila-box.p-4.rounded
+                        a(href="property-details.html").d-block
+                            img(src="Images/property-01.jpg" alt="" class="w-100 h-100 rounded-3")
+                        .vila-body.vila.py-3.border-bottom
+                            .d-flex.align-items-center.justify-content-between.my-3
+                                span.type Luxury Villa
+                                span.primary.fw-bold.fs-5 $2.264.000
+                            a(href="property-details.html" class="fs-5 fw-bold") 18 New Street Miami, OR 97219
+                            .info.d-flex.flex-wrap.gap-3.pt-4 
+                                span Bedrooms: 
+                                    b 8
+                                span Bathrooms: 
+                                    b 8
+                                span Area: 
+                                    b 545m2
+                                span Floor: 
+                                    b 3
+                                span Parking: 
+                                    b 6 spots
+                        button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+                .col-lg-4.col-md-6
+                    .vila-box.p-4.rounded
+                        a(href="property-details.html").d-block
+                            img(src="Images/property-02.jpg" alt="" class="w-100 h-100 rounded-3")
+                        .vila-body.vila.py-3.border-bottom
+                            .d-flex.align-items-center.justify-content-between.my-3
+                                span.type Luxury Villa
+                                span.primary.fw-bold.fs-5 $1.180.000
+                            a(href="property-details.html" class="fs-5 fw-bold") 54 Mid Street Florida, OR 27001
+                            .info.d-flex.flex-wrap.gap-3.pt-4 
+                                span Bedrooms: 
+                                    b 6
+                                span Bathrooms: 
+                                    b 5
+                                span Area: 
+                                    b 450m2
+                                span Floor: 
+                                    b 3
+                                span Parking: 
+                                    b 8 spots
+                        button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+                .col-lg-4.col-md-6
+                    .vila-box.vila.p-4.rounded
+                        a(href="property-details.html").d-block
+                            img(src="Images/property-03.jpg" alt="" class="w-100 h-100 rounded-3")
+                        .vila-body.py-3.border-bottom
+                            .d-flex.align-items-center.justify-content-between.my-3
+                                span.type Luxury Villa
+                                span.primary.fw-bold.fs-5 $1.460.000
+                            a(href="property-details.html" class="fs-5 fw-bold") 26 Old Street Miami, OR 38540
+                            .info.d-flex.flex-wrap.gap-3.pt-4 
+                                span Bedrooms: 
+                                    b 5
+                                span Bathrooms: 
+                                    b 4
+                                span Area: 
+                                    b 225m2
+                                span Floor: 
+                                    b 3
+                                span Parking: 
+                                    b 10 spots
+                        button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+                .col-lg-4.col-md-6
+                    .vila-box.apartment.p-4.rounded
+                        a(href="property-details.html").d-block
+                            img(src="Images/property-04.jpg" alt="" class="w-100 h-100 rounded-3")
+                        .vila-body.py-3.border-bottom
+                            .d-flex.align-items-center.justify-content-between.my-3
+                                span.type Apartment
+                                span.primary.fw-bold.fs-5 $584.500
+                            a(href="property-details.html" class="fs-5 fw-bold") 12 New Street Miami, OR 12650
+                            .info.d-flex.flex-wrap.gap-3.pt-4 
+                                span Bedrooms: 
+                                    b 4
+                                span Bathrooms: 
+                                    b 3
+                                span Area: 
+                                    b 125m2
+                                span Floor: 
+                                    b 25th
+                                span Parking: 
+                                    b 2 cars
+                        button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+                .col-lg-4.col-md-6
+                    .vila-box.penthouse.p-4.rounded
+                        a(href="property-details.html").d-block
+                            img(src="Images/property-05.jpg" alt="" class="w-100 h-100 rounded-3")
+                        .vila-body.py-3.border-bottom
+                            .d-flex.align-items-center.justify-content-between.my-3
+                                span.type Penthouse
+                                span.primary.fw-bold.fs-5 $925.600
+                            a(href="property-details.html" class="fs-5 fw-bold") 34 Beach Street Miami, OR 42680
+                            .info.d-flex.flex-wrap.gap-3.pt-4 
+                                span Bedrooms: 
+                                    b 4
+                                span Bathrooms: 
+                                    b 4
+                                span Area: 
+                                    b 180m2
+                                span Floor: 
+                                    b 38th
+                                span Parking: 
+                                    b 2 cars
+                        button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+                .col-lg-4.col-md-6
+                    .vila-box.p-4.rounded
+                        a(href="property-details.html").d-block
+                            img(src="Images/property-06.jpg" alt="" class="w-100 h-100 rounded-3")
+                        .vila-body.py-3.border-bottom
+                            .d-flex.align-items-center.justify-content-between.my-3
+                                span.type Modern Condo
+                                span.primary.fw-bold.fs-5 $450.000
+                            a(href="property-details.html" class="fs-5 fw-bold") 22 New Street Portland, OR 16540
+                            .info.d-flex.flex-wrap.gap-3.pt-4 
+                                span Bedrooms: 
+                                    b 3
+                                span Bathrooms: 
+                                    b 2
+                                span Area: 
+                                    b 165m2
+                                span Floor: 
+                                    b 26th
+                                span Parking: 
+                                    b 3 cars
+                        button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+                .col-lg-4.col-md-6
+                    .vila-box.vila.p-4.rounded
+                        a(href="property-details.html").d-block
+                            img(src="Images/property-01.jpg" alt="" class="w-100 h-100 rounded-3")
+                        .vila-body.py-3.border-bottom
+                            .d-flex.align-items-center.justify-content-between.my-3
+                                span.type Luxury Villa
+                                span.primary.fw-bold.fs-5 $2.264.000
+                            a(href="property-details.html" class="fs-5 fw-bold") 18 New Street Miami, OR 97219
+                            .info.d-flex.flex-wrap.gap-3.pt-4 
+                                span Bedrooms: 
+                                    b 8
+                                span Bathrooms: 
+                                    b 8
+                                span Area: 
+                                    b 545m2
+                                span Floor: 
+                                    b 3
+                                span Parking: 
+                                    b 6 spots
+                        button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+                .col-lg-4.col-md-6
+                    .vila-box.vila.p-4.rounded
+                        a(href="property-details.html").d-block
+                            img(src="Images/property-02.jpg" alt="" class="w-100 h-100 rounded-3")
+                        .vila-body.py-3.border-bottom
+                            .d-flex.align-items-center.justify-content-between.my-3
+                                span.type Luxury Villa
+                                span.primary.fw-bold.fs-5 $1.180.000
+                            a(href="property-details.html" class="fs-5 fw-bold") 54 Mid Street Florida, OR 27001
+                            .info.d-flex.flex-wrap.gap-3.pt-4 
+                                span Bedrooms: 
+                                    b 6
+                                span Bathrooms: 
+                                    b 5
+                                span Area: 
+                                    b 450m2
+                                span Floor: 
+                                    b 3
+                                span Parking: 
+                                    b 8 spots
+                        button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+                .col-lg-4.col-md-6
+                    .vila-box.vila.p-4.rounded
+                        a(href="property-details.html").d-block
+                            img(src="Images/property-03.jpg" alt="" class="w-100 h-100 rounded-3")
+                        .vila-body.py-3.border-bottom
+                            .d-flex.align-items-center.justify-content-between.my-3
+                                span.type Luxury Villa
+                                span.primary.fw-bold.fs-5 $1.460.000
+                            a(href="property-details.html" class="fs-5 fw-bold") 26 Old Street Miami, OR 38540
+                            .info.d-flex.flex-wrap.gap-3.pt-4 
+                                span Bedrooms: 
+                                    b 5
+                                span Bathrooms: 
+                                    b 4
+                                span Area: 
+                                    b 225m2
+                                span Floor: 
+                                    b 3
+                                span Parking: 
+                                    b 10 spots
+                        button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+    .pagination.align-items-center.justify-content-center.mb-5.pb-5
+        .d-flex.gap-3
+            span.active 1
+            span 2
+            span 3
+            span >>
+    script(src="JS/properties.js") 

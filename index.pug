@@ -1,0 +1,385 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap")
+        block pageTitleAndStyle  
+            title Home
+            link(rel="stylesheet" href="sass/index.css")
+        link(rel="stylesheet" href="sass/bootstrap.min.css")
+        link(rel="stylesheet" href="sass/all.min.css")
+    body
+        include includes/_header   
+        block content
+            //- Start Slider
+            .slider-container
+                span.next
+                    i(class="fa-solid fa-chevron-right")
+                .slide 
+                    img(src="Images/banner-01.jpg" alt="")
+                    div.content
+                        .category
+                            | Toronto, 
+                            span.primary Canada
+                        h2(class="text-light text-uppercase fw-bold mt-4 mb-0") Hurry!
+                            br 
+                            | Get the Best Villa for you
+                .slide 
+                    img(src="Images/banner-02.jpg" alt="")
+                    div.content
+                        .category
+                            | Melbourne, 
+                            span.primary Australia
+                        h2(class="text-light text-uppercase fw-bold mt-4 mb-0") Be Quick!
+                            br 
+                            | Get the highest level penthouse
+                .slide 
+                    img(src="Images/banner-03.jpg" alt="")
+                    div.content
+                        .category
+                            | Miami, 
+                            span.primary South Florida
+                        h2(class="text-light text-uppercase fw-bold mt-4 mb-0") Act Now! 
+                            br 
+                            | Get the highest level penthouse
+                .pagination 
+                    span.pagin.active
+                    span.pagin.
+                    span.pagin.
+                span.prev
+                    i(class="fa-solid fa-chevron-left")
+                    script(src="JS/slider.js") 
+            //- End Slider
+            //- Start Feature
+            .container 
+                .feature.py-5.my-5 
+                    .row 
+                        .col-lg-4
+                            .img.w-100.h-100
+                                img(src="Images/featured.jpg" alt="" class="w-100 h-100")
+                                a(href="property-details.html" class="feat-icon") 
+                                    img(src="Images/featured-icon.png" alt="")
+                        .col-lg-5.d-flex.flex-column.justify-content-between.mt-5.mt-lg-0
+                            .main-header 
+                                span Featured
+                                h2.fw-bold.mt-3 Best Apartment
+                                    br 
+                                    | Sea view
+                            .feat-text.mt-4 
+                                p.border-bottom.p-3.active Best useful links ?
+                                .text.ps-3.lh-lg
+                                    p Get 
+                                        b the best villa 
+                                        |website template in HTML CSS and Bootstrap for your business. TemplateMo provides you the 
+                                        a(href="https://www.google.com/search?q=best+free+css+templates")  best free CSS templates 
+                                        |in the world. Please tell your friends about it.
+                                p.border-bottom.p-3 How does this work ?
+                                .text.ps-3.lh-lg
+                                    p Dolor 
+                                        b almesit amet, 
+                                        | consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur 
+                                        em adipiscing 
+                                        |elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                p.p-3 How does this work ?
+                                .text.ps-3.lh-lg
+                                    p Dolor 
+                                        b almesit amet, 
+                                        | consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur 
+                                        em adipiscing 
+                                        |elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        .col-lg-3
+                            .feat-info.rounded-3.px-3
+                                .info.d-flex.align-items-center.gap-4.border-bottom.py-5
+                                    img(src="Images/info-icon-01.png" alt="")
+                                    p.m-0.fw-bold.fs-5 250 m2
+                                        span.d-block.fw-normal Total Flat Space
+                                .info.d-flex.align-items-center.gap-4.border-bottom.py-5
+                                    img(src="Images/info-icon-02.png" alt="")
+                                    p.m-0.fw-bold.fs-5 Contract
+                                        span.d-block.fw-normal Contract Ready
+                                .info.d-flex.align-items-center.gap-4.border-bottom.py-5
+                                    img(src="Images/info-icon-03.png" alt="")
+                                    p.m-0.fw-bold.fs-5 Payment
+                                        span.d-block.fw-normal Payment Process
+                                .info.d-flex.align-items-center.gap-4.py-5
+                                    img(src="Images/info-icon-04.png" alt="")
+                                    p.m-0.fw-bold.fs-5 Safety
+                                        span.d-block.fw-normal 24/7 Under Control
+            //- End Feature
+            //- Start Video View
+            div
+                .video-view.py-5.my-5
+                .container
+                    .video-content.text-center 
+                        .main-header 
+                            span(class="mx-auto" style="width: fit-content") Video View
+                            h2.fw-bold.mt-3.text-light Get Closer View 
+                                br 
+                                | Different Feeling
+                        .video-container.py-5.position-relative
+                            img(src="Images/video-frame.jpg" alt="" class="img-fluid rounded-3")
+                            a(href="https://www.youtube.com" target="_blanck" class="play-btn")
+                                i(class="fa-solid fa-play")
+                        .qualification.my-5.py-5 
+                            .row.g-5.w-100
+                                .col-lg-4
+                                    .box.d-flex.align-items-center.justify-content-center.rounded-3.position-relative.p-3.gap-4.mx-auto.mx-lg-0
+                                        h2.primary.m-0.fw-bold 34
+                                        p.m-0.text-start.fw-bold Buildings 
+                                            br
+                                            | Finished Now
+                                        span.icon
+                                .col-lg-4
+                                    .box.d-flex.align-items-center.justify-content-center.rounded-3.position-relative.p-3.gap-4.mx-auto.mx-lg-0
+                                        h2.primary.m-0.fw-bold 12
+                                        p.m-0.text-start.fw-bold Years 
+                                            br
+                                            | Experience
+                                        span.icon
+                                .col-lg-4
+                                    .box.d-flex.align-items-center.justify-content-center.rounded-3.position-relative.p-3.gap-4.mx-auto.mx-lg-0
+                                        h2.primary.m-0.fw-bold 24
+                                        p.m-0.text-start.fw-bold Awards
+                                            br
+                                            | Won 2023
+                                        span.icon
+            //- End Video View
+            //- Start Deals
+            .deals.py-5.my-5
+                .container.py-5
+                    div.d-block.d-lg-flex.justify-content-between.mb-5
+                        .main-header.mb-4.mb-lg-0
+                            span Best Deal
+                            h2.fw-bold.mt-3 Find Your Best Deal
+                                br 
+                                | Right Now!
+                        div.align-content-end.d-sm-block.d-flex.flex-column.gap-4
+                            span.main-btn.active.apartment Apartment
+                            span.main-btn.mx-0.mx-sm-3.villa-house Villa House
+                            span.main-btn.penthouse Penthouse
+                    .row.pt-4.g-5.deal-content
+                        .col-lg-3
+                            .vial-info.rounded-3.p-4.bg-white
+                                .py-4.border-bottom.d-flex.align-items-center.justify-content-between
+                                    span Total Flat Space
+                                    h5.fw-bold 185 m2
+                                .py-4.border-bottom.d-flex.align-items-center.justify-content-between
+                                    span Floor number
+                                    h5.fw-bold 26th
+                                .py-4.border-bottom.d-flex.align-items-center.justify-content-between
+                                    span Number of rooms
+                                    h5.fw-bold 4
+                                .py-4.border-bottom.d-flex.align-items-center.justify-content-between
+                                    span Parking Available
+                                    h5.fw-bold Yes
+                                .py-4.d-flex.align-items-center.justify-content-between
+                                    span Payment Process
+                                    h5.fw-bold Bank
+                        .col-lg-6
+                            div 
+                                img(src="Images/deal-01.jpg" alt="" class="w-100 h-100 rounded-3")
+                        .col-lg-3.d-flex.flex-column.justify-content-between
+                            .text
+                                h6.mt-0.mb-4.fw-bold Extra Info About Property
+                                p.m-0.lh-lg This beautiful apartment offers spacious living areas, modern amenities, and a convenient location for comfortable living.
+                                p.my-4.lh-lg When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.
+                            div(class="px-2 mb-2 spatial-btn")
+                                span: i(class="fa-solid fa-calendar")
+                                a(href="property-details.html" class="content") Schedule a visit
+            //- End Deals
+            //- Start Property
+            .property.py-5.my-5
+                .container
+                    .main-header.mb-5.text-center
+                        span(class="mx-auto" style="width: fit-content") Properties
+                        h2.fw-bold.mt-3 We Provide The Best
+                            br 
+                            | Property You Like
+                    .row.g-5.mb-5 
+                        .col-lg-4.col-md-6
+                            .vila-box.p-4.rounded
+                                a(href="property-details.html").d-block
+                                    img(src="Images/property-01.jpg" alt="" class="w-100 h-100 rounded-3")
+                                .vila-body.py-3.border-bottom
+                                    .d-flex.align-items-center.justify-content-between.my-3
+                                        span.type Luxury Villa
+                                        span.primary.fw-bold.fs-5 $2.264.000
+                                    a(href="property-details.html" class="fs-5 fw-bold") 18 New Street Miami, OR 97219
+                                    .info.d-flex.flex-wrap.gap-3.pt-4 
+                                        span Bedrooms: 
+                                            b 8
+                                        span Bathrooms: 
+                                            b 8
+                                        span Area: 
+                                            b 545m2
+                                        span Floor: 
+                                            b 3
+                                        span Parking: 
+                                            b 6 spots
+                                button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+                        .col-lg-4.col-md-6
+                            .vila-box.p-4.rounded
+                                a(href="property-details.html").d-block
+                                    img(src="Images/property-02.jpg" alt="" class="w-100 h-100 rounded-3")
+                                .vila-body.py-3.border-bottom
+                                    .d-flex.align-items-center.justify-content-between.my-3
+                                        span.type Luxury Villa
+                                        span.primary.fw-bold.fs-5 $1.180.000
+                                    a(href="property-details.html" class="fs-5 fw-bold") 54 Mid Street Florida, OR 27001
+                                    .info.d-flex.flex-wrap.gap-3.pt-4 
+                                        span Bedrooms: 
+                                            b 6
+                                        span Bathrooms: 
+                                            b 5
+                                        span Area: 
+                                            b 450m2
+                                        span Floor: 
+                                            b 3
+                                        span Parking: 
+                                            b 8 spots
+                                button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+                        .col-lg-4.col-md-6
+                            .vila-box.p-4.rounded
+                                a(href="property-details.html").d-block
+                                    img(src="Images/property-03.jpg" alt="" class="w-100 h-100 rounded-3")
+                                .vila-body.py-3.border-bottom
+                                    .d-flex.align-items-center.justify-content-between.my-3
+                                        span.type Luxury Villa
+                                        span.primary.fw-bold.fs-5 $1.460.000
+                                    a(href="property-details.html" class="fs-5 fw-bold") 26 Old Street Miami, OR 38540
+                                    .info.d-flex.flex-wrap.gap-3.pt-4 
+                                        span Bedrooms: 
+                                            b 5
+                                        span Bathrooms: 
+                                            b 4
+                                        span Area: 
+                                            b 225m2
+                                        span Floor: 
+                                            b 3
+                                        span Parking: 
+                                            b 10 spots
+                                button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+                        .col-lg-4.col-md-6
+                            .vila-box.p-4.rounded
+                                a(href="property-details.html").d-block
+                                    img(src="Images/property-04.jpg" alt="" class="w-100 h-100 rounded-3")
+                                .vila-body.py-3.border-bottom
+                                    .d-flex.align-items-center.justify-content-between.my-3
+                                        span.type Apartment
+                                        span.primary.fw-bold.fs-5 $584.500
+                                    a(href="property-details.html" class="fs-5 fw-bold") 12 New Street Miami, OR 12650
+                                    .info.d-flex.flex-wrap.gap-3.pt-4 
+                                        span Bedrooms: 
+                                            b 4
+                                        span Bathrooms: 
+                                            b 3
+                                        span Area: 
+                                            b 125m2
+                                        span Floor: 
+                                            b 25th
+                                        span Parking: 
+                                            b 2 cars
+                                button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+                        .col-lg-4.col-md-6
+                            .vila-box.p-4.rounded
+                                a(href="property-details.html").d-block
+                                    img(src="Images/property-05.jpg" alt="" class="w-100 h-100 rounded-3")
+                                .vila-body.py-3.border-bottom
+                                    .d-flex.align-items-center.justify-content-between.my-3
+                                        span.type Penthouse
+                                        span.primary.fw-bold.fs-5 $925.600
+                                    a(href="property-details.html" class="fs-5 fw-bold") 34 Beach Street Miami, OR 42680
+                                    .info.d-flex.flex-wrap.gap-3.pt-4 
+                                        span Bedrooms: 
+                                            b 4
+                                        span Bathrooms: 
+                                            b 4
+                                        span Area: 
+                                            b 180m2
+                                        span Floor: 
+                                            b 38th
+                                        span Parking: 
+                                            b 2 cars
+                                button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+                        .col-lg-4.col-md-6
+                            .vila-box.p-4.rounded
+                                a(href="property-details.html").d-block
+                                    img(src="Images/property-06.jpg" alt="" class="w-100 h-100 rounded-3")
+                                .vila-body.py-3.border-bottom
+                                    .d-flex.align-items-center.justify-content-between.my-3
+                                        span.type Modern Condo
+                                        span.primary.fw-bold.fs-5 $450.000
+                                    a(href="property-details.html" class="fs-5 fw-bold") 22 New Street Portland, OR 16540
+                                    .info.d-flex.flex-wrap.gap-3.pt-4 
+                                        span Bedrooms: 
+                                            b 3
+                                        span Bathrooms: 
+                                            b 2
+                                        span Area: 
+                                            b 165m2
+                                        span Floor: 
+                                            b 26th
+                                        span Parking: 
+                                            b 3 cars
+                                button.secondary-btn.rounded-pill.mt-5.d-block.mx-auto Schedule a visit
+            //- End Property
+            //- Start Contact Us
+            .contact
+                .container
+                    .main-header.mb-4.text-center 
+                        span(class="mx-auto" style="width: fit-content") Contact Us
+                        h2.fw-bold.mt-3.text-light Get In Touch With 
+                            br 
+                            | Our Agents
+            .contact-content.mb-5.pb-5 
+                .container 
+                    .row 
+                        .col-lg-7 
+                            div 
+                                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth",
+                                frameborder="0",
+                                width="100%",
+                                height="500px",
+                                style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);" 
+                                ) 
+                            div.d-block.d-lg-flex.align-items-center.gap-5.mt-5
+                                .info.p-4.rounded-3.d-flex.align-items-center.gap-4.mw-50.mb-4.mb-lg-0
+                                    img(src="Images/phone-icon.png" alt="")
+                                    p.fw-bold.fs-5.m-0 010-020-0340
+                                        span.d-block Phone Number
+                                .info.p-4.rounded-3.d-flex.align-items-center.gap-4.mw-50
+                                    img(src="Images/email-icon.png" alt="") 
+                                    p.fw-bold.fs-5.m-0 info@villa.co
+                                        span.d-block Business Email
+                        .col-lg-5
+                            form(action="" class="rounded-3 bg-white mt-5 mt-lg-0")
+                                div.mb-4
+                                    label(for="") Full Name
+                                    input(type="text" placeholder="Your Name...",
+                                    required, 
+                                    class="form-control mt-2 rounded-pill w-100"
+                                    )
+                                div.mb-4 
+                                    label(for="") Email Address
+                                    input(type="text" placeholder="Your Email...",
+                                    required, 
+                                    class="form-control mt-2 rounded-pill w-100"
+                                    )
+                                div.mb-4 
+                                    label(for="") Subject
+                                    input(type="text" placeholder="Your Subject...",
+                                    required, 
+                                    class="form-control mt-2 rounded-pill w-100"
+                                    )
+                                div.pb-5 
+                                    label(for="") Message
+                                    textarea(name="", 
+                                    placeholder="Your Message...",
+                                    required, 
+                                    class="form-control mt-2 rounded-4 w-100",
+                                    )
+                                button.secondary-btn.rounded-pill.mt-5 Contact Us
+                                script(src="JS/index.js")   
+        include includes/_footer
+    script(src="JS/bootstrap.bundle.min.js")

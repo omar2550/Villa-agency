@@ -1,0 +1,46 @@
+header 
+    div(class="info d-none d-md-block border-bottom") 
+        div(class="container d-flex justify-content-between align-items-center py-2") 
+            div(class="mail d-flex align-items-center gap-2")
+                div
+                    i(class="fa-solid fa-envelope primary px-2 fs-5") 
+                    a(href="#")  info@company.com
+                div 
+                    i(class="fa-solid fa-map primary px-2 fs-5")
+                    a(href="#")  Sunny Isles Beach, FL 33160
+            .social
+                a(href="#" class="mx-1") 
+                    i(class="fa-brands fa-facebook-f")
+                a(href="#" class="mx-1") 
+                    i(class="fa-brands fa-twitter")
+                a(href="#" class="mx-1") 
+                    i(class="fa-brands fa-instagram")
+                a(href="#" class="mx-1") 
+                    i(class="fa-brands fa-linkedin-in")
+    nav(class="navbar navbar-expand-lg")
+        div(class="container py-3") 
+            a(href="index.html" class="logo fs-2 text-uppercase fw-bold text-dark") Villa
+            button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                span(class="navbar-toggler-icon")
+            div(class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent")
+                ul(class="navbar-nav mb-2 mb-lg-0")
+                    li(class="nav-item px-2")
+                        a(class="nav-link Home active" aria-current="page" href="index.html") Home
+                    li(class="nav-item px-2")
+                        a(class="nav-link Properties" aria-current="page" href="properties.html") Properties
+                    li(class="nav-item px-2")
+                        a(class="nav-link PropertyDetails" aria-current="page" href="property-details.html") Property Details
+                    li(class="nav-item px-2")
+                        a(class="nav-link ContactUs" aria-current="page" href="contact.html") Contact Us
+                    li(class="nav-item px-2 spatial-btn")
+                        span: i(class="fa-solid fa-calendar")
+                        a(class="nav-link content" aria-current="page" href="index.html")  Schedule a visit
+script(src="JS/header.js")
+script.
+    document
+        .querySelectorAll("header nav .nav-link")
+        .forEach((link) => link.classList.remove("active"));
+
+
+    document
+        .querySelector(`header nav .${document.title.split(" ").join("")}`).classList.add("active");

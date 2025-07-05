@@ -1,0 +1,100 @@
+extends index
+block pageTitleAndStyle   
+    title Property Details
+    link(rel="stylesheet" href="sass/property-details.css")
+include includes/mixins
+block content
+    +landing("Property Details")
+    .container 
+        .feature.py-5.my-5 
+            .row 
+                .col-lg-8
+                    .w-100
+                        img(src="Images/single-property.jpg" alt="" class="img-fluid")
+                    .mt-5.mb-3.pb-5.border-bottom  
+                        span.type Apartment
+                        h3.fw-bold.mt-3 24 New Street Miami, OR 24560
+                    .top-text.py-4 
+                        p.lh-lg.mb-3 Get 
+                            b the best villa agency  
+                            | HTML CSS Bootstrap Template for your company website. TemplateMo provides you 
+                            a(href="https://www.google.com/search?q=best+free+css+templates")  the best free CSS templates in the world. 
+                            | Please tell your friends about it. Thank you. Cloud bread kogi bitters pitchfork shoreditch tumblr yr succulents single-origin coffee schlitz enamel pin you probably haven't heard of them ugh hella.
+                        p.m-0.lh-lg When you look for free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Digital Marketing, TemplateMo Corporate Layouts, etc. Master cleanse +1 intelligentsia swag post-ironic, slow-carb chambray knausgaard PBR&B DSA poutine neutra cardigan hoodie pop-up.
+                    .feat-text.mt-4 
+                        p.border-bottom.p-3.fw-bold.active Best useful links ?
+                        .text.ps-3.lh-lg
+                            p Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod tempor kinfolk tonx seitan crucifix 3 wolf moon bicycle rights keffiyeh snackwave wolf same vice, chillwave vexillologist incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        p.border-bottom.p-3.fw-bold How does this work ?
+                        .text.ps-3.lh-lg
+                            p Dolor 
+                                b almesit amet, 
+                                | consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        p.p-3.fw-bold Why is Villa the best ?
+                        .text.ps-3.lh-lg
+                            p Dolor 
+                                b almesit amet, 
+                                | consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .col-lg-4
+                    .feat-info.rounded-3.p-4.ms-0.ms-lg-5
+                        .info.d-flex.align-items-center.gap-4.border-bottom.py-4
+                            img(src="Images/info-icon-01.png" alt="")
+                            p.m-0.fw-bold 250 m2
+                                span.d-block.fw-normal Total Flat Space
+                        .info.d-flex.align-items-center.gap-4.border-bottom.py-4
+                            img(src="Images/info-icon-02.png" alt="")
+                            p.m-0.fw-bold Contract
+                                span.d-block.fw-normal Contract Ready
+                        .info.d-flex.align-items-center.gap-4.border-bottom.py-4
+                            img(src="Images/info-icon-03.png" alt="")
+                            p.m-0.fw-bold Payment
+                                span.d-block.fw-normal Payment Process
+                        .info.d-flex.align-items-center.gap-4.py-4
+                            img(src="Images/info-icon-04.png" alt="")
+                            p.m-0.fw-bold Safety
+                                span.d-block.fw-normal 24/7 Under Control
+    //- End features
+    //- Start Deals
+    .deals.py-5.my-5
+        .container.py-5
+            div.d-block.d-lg-flex.justify-content-between.mb-5
+                .main-header.mb-4.mb-lg-0
+                    span Best Deal
+                    h2.fw-bold.mt-3 Find Your Best Deal
+                        br 
+                        | Right Now!
+                div.align-content-end.d-sm-block.d-flex.flex-column.gap-4
+                    span.main-btn.active.apartment Apartment
+                    span.main-btn.mx-0.mx-sm-3.villa-house Villa House
+                    span.main-btn.penthouse Penthouse
+            .row.pt-4.g-5.deal-content
+                .col-lg-3
+                    .vial-info.rounded-3.p-4.bg-white
+                        .py-4.border-bottom.d-flex.align-items-center.justify-content-between
+                            span Total Flat Space
+                            h5.fw-bold 185 m2
+                        .py-4.border-bottom.d-flex.align-items-center.justify-content-between
+                            span Floor number
+                            h5.fw-bold 26th
+                        .py-4.border-bottom.d-flex.align-items-center.justify-content-between
+                            span Number of rooms
+                            h5.fw-bold 4
+                        .py-4.border-bottom.d-flex.align-items-center.justify-content-between
+                            span Parking Available
+                            h5.fw-bold Yes
+                        .py-4.d-flex.align-items-center.justify-content-between
+                            span Payment Process
+                            h5.fw-bold Bank
+                .col-lg-6
+                    div 
+                        img(src="Images/deal-01.jpg" alt="" class="w-100 h-100 rounded-3")
+                .col-lg-3.d-flex.flex-column.justify-content-between
+                    .text
+                        h6.mt-0.mb-4.fw-bold Extra Info About Property
+                        p.m-0.lh-lg This beautiful apartment offers spacious living areas, modern amenities, and a convenient location for comfortable living.
+                        p.my-4.lh-lg When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.
+                    div(class="px-2 mb-2 spatial-btn")
+                        span: i(class="fa-solid fa-calendar")
+                        a(href="property-details.html" class="content") Schedule a visit
+    //- End Deals
+    script(src="JS/index.js") 

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
+    <title>Home</title>
+    <link rel="stylesheet" href="sass/index.css">
+    <link rel="stylesheet" href="sass/bootstrap.min.css">
+    <link rel="stylesheet" href="sass/all.min.css">
+  </head>
+  <body>
+    <header> 
+      <div class="info d-none d-md-block border-bottom"> 
+        <div class="container d-flex justify-content-between align-items-center py-2"> 
+          <div class="mail d-flex align-items-center gap-2">
+            <div><i class="fa-solid fa-envelope primary px-2 fs-5"> </i><a href="#"> info@company.com</a></div>
+            <div> <i class="fa-solid fa-map primary px-2 fs-5"></i><a href="#"> Sunny Isles Beach, FL 33160</a></div>
+          </div>
+          <div class="social"><a class="mx-1" href="#"> <i class="fa-brands fa-facebook-f"></i></a><a class="mx-1" href="#"> <i class="fa-brands fa-twitter"></i></a><a class="mx-1" href="#"> <i class="fa-brands fa-instagram"></i></a><a class="mx-1" href="#"> <i class="fa-brands fa-linkedin-in"></i></a></div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container py-3"> <a class="logo fs-2 text-uppercase fw-bold text-dark" href="index.html">Villa</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item px-2"><a class="nav-link Home active" aria-current="page" href="index.html">Home</a></li>
+              <li class="nav-item px-2"><a class="nav-link Properties" aria-current="page" href="properties.html">Properties</a></li>
+              <li class="nav-item px-2"><a class="nav-link PropertyDetails" aria-current="page" href="property-details.html">Property Details</a></li>
+              <li class="nav-item px-2"><a class="nav-link ContactUs" aria-current="page" href="contact.html">Contact Us</a></li>
+              <li class="nav-item px-2 spatial-btn"><span><i class="fa-solid fa-calendar"></i></span><a class="nav-link content" aria-current="page" href="index.html"> Schedule a visit</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="JS/header.js"></script>
+    <script>
+      document
+          .querySelectorAll("header nav .nav-link")
+          .forEach((link) => link.classList.remove("active"));
+      
+      
+      document
+          .querySelector(`header nav .${document.title.split(" ").join("")}`).classList.add("active");
+    </script>
+    <div class="slider-container"><span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+      <div class="slide"> <img src="Images/banner-01.jpg" alt="">
+        <div class="content">
+          <div class="category">Toronto, <span class="primary">Canada</span></div>
+          <h2 class="text-light text-uppercase fw-bold mt-4 mb-0">Hurry!<br>Get the Best Villa for you</h2>
+        </div>
+      </div>
+      <div class="slide"> <img src="Images/banner-02.jpg" alt="">
+        <div class="content">
+          <div class="category">Melbourne, <span class="primary">Australia</span></div>
+          <h2 class="text-light text-uppercase fw-bold mt-4 mb-0">Be Quick!<br>Get the highest level penthouse</h2>
+        </div>
+      </div>
+      <div class="slide"> <img src="Images/banner-03.jpg" alt="">
+        <div class="content">
+          <div class="category">Miami, <span class="primary">South Florida</span></div>
+          <h2 class="text-light text-uppercase fw-bold mt-4 mb-0">Act Now! <br>Get the highest level penthouse</h2>
+        </div>
+      </div>
+      <div class="pagination"> <span class="pagin active"></span><span class="pagin"></span><span class="pagin"></span></div><span class="prev"><i class="fa-solid fa-chevron-left"></i>
+        <script src="JS/slider.js"> </script></span>
+    </div>
+    <div class="container"> 
+      <div class="feature py-5 my-5"> 
+        <div class="row"> 
+          <div class="col-lg-4">
+            <div class="img w-100 h-100"><img class="w-100 h-100" src="Images/featured.jpg" alt=""><a class="feat-icon" href="property-details.html"> <img src="Images/featured-icon.png" alt=""></a></div>
+          </div>
+          <div class="col-lg-5 d-flex flex-column justify-content-between mt-5 mt-lg-0">
+            <div class="main-header"> <span>Featured</span>
+              <h2 class="fw-bold mt-3">Best Apartment<br>Sea view</h2>
+            </div>
+            <div class="feat-text mt-4"> 
+              <p class="border-bottom p-3 active">Best useful links ?</p>
+              <div class="text ps-3 lh-lg">
+                <p>Get <b>the best villa </b>website template in HTML CSS and Bootstrap for your business. TemplateMo provides you the <a href="https://www.google.com/search?q=best+free+css+templates"> best free CSS templates </a>in the world. Please tell your friends about it.</p>
+              </div>
+              <p class="border-bottom p-3">How does this work ?</p>
+              <div class="text ps-3 lh-lg">
+                <p>Dolor <b>almesit amet, </b>consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <em>adipiscing </em>elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <p class="p-3">How does this work ?</p>
+              <div class="text ps-3 lh-lg">
+                <p>Dolor <b>almesit amet, </b>consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <em>adipiscing </em>elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="feat-info rounded-3 px-3">
+              <div class="info d-flex align-items-center gap-4 border-bottom py-5"><img src="Images/info-icon-01.png" alt="">
+                <p class="m-0 fw-bold fs-5">250 m2<span class="d-block fw-normal">Total Flat Space</span></p>
+              </div>
+              <div class="info d-flex align-items-center gap-4 border-bottom py-5"><img src="Images/info-icon-02.png" alt="">
+                <p class="m-0 fw-bold fs-5">Contract<span class="d-block fw-normal">Contract Ready</span></p>
+              </div>
+              <div class="info d-flex align-items-center gap-4 border-bottom py-5"><img src="Images/info-icon-03.png" alt="">
+                <p class="m-0 fw-bold fs-5">Payment<span class="d-block fw-normal">Payment Process</span></p>
+              </div>
+              <div class="info d-flex align-items-center gap-4 py-5"><img src="Images/info-icon-04.png" alt="">
+                <p class="m-0 fw-bold fs-5">Safety<span class="d-block fw-normal">24/7 Under Control</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="video-view py-5 my-5"></div>
+      <div class="container">
+        <div class="video-content text-center"> 
+          <div class="main-header"> <span class="mx-auto" style="width: fit-content">Video View</span>
+            <h2 class="fw-bold mt-3 text-light">Get Closer View <br>Different Feeling</h2>
+          </div>
+          <div class="video-container py-5 position-relative"><img class="img-fluid rounded-3" src="Images/video-frame.jpg" alt=""><a class="play-btn" href="https://www.youtube.com" target="_blanck"><i class="fa-solid fa-play"></i></a></div>
+          <div class="qualification my-5 py-5"> 
+            <div class="row g-5 w-100">
+              <div class="col-lg-4">
+                <div class="box d-flex align-items-center justify-content-center rounded-3 position-relative p-3 gap-4 mx-auto mx-lg-0">
+                  <h2 class="primary m-0 fw-bold">34</h2>
+                  <p class="m-0 text-start fw-bold">Buildings <br>Finished Now</p><span class="icon"></span>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box d-flex align-items-center justify-content-center rounded-3 position-relative p-3 gap-4 mx-auto mx-lg-0">
+                  <h2 class="primary m-0 fw-bold">12</h2>
+                  <p class="m-0 text-start fw-bold">Years <br>Experience</p><span class="icon"></span>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box d-flex align-items-center justify-content-center rounded-3 position-relative p-3 gap-4 mx-auto mx-lg-0">
+                  <h2 class="primary m-0 fw-bold">24</h2>
+                  <p class="m-0 text-start fw-bold">Awards<br>Won 2023</p><span class="icon"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deals py-5 my-5">
+      <div class="container py-5">
+        <div class="d-block d-lg-flex justify-content-between mb-5">
+          <div class="main-header mb-4 mb-lg-0"><span>Best Deal</span>
+            <h2 class="fw-bold mt-3">Find Your Best Deal<br>Right Now!</h2>
+          </div>
+          <div class="align-content-end d-sm-block d-flex flex-column gap-4"><span class="main-btn active apartment">Apartment</span><span class="main-btn mx-0 mx-sm-3 villa-house">Villa House</span><span class="main-btn penthouse">Penthouse</span></div>
+        </div>
+        <div class="row pt-4 g-5 deal-content">
+          <div class="col-lg-3">
+            <div class="vial-info rounded-3 p-4 bg-white">
+              <div class="py-4 border-bottom d-flex align-items-center justify-content-between"><span>Total Flat Space</span>
+                <h5 class="fw-bold">185 m2</h5>
+              </div>
+              <div class="py-4 border-bottom d-flex align-items-center justify-content-between"><span>Floor number</span>
+                <h5 class="fw-bold">26th</h5>
+              </div>
+              <div class="py-4 border-bottom d-flex align-items-center justify-content-between"><span>Number of rooms</span>
+                <h5 class="fw-bold">4</h5>
+              </div>
+              <div class="py-4 border-bottom d-flex align-items-center justify-content-between"><span>Parking Available</span>
+                <h5 class="fw-bold">Yes</h5>
+              </div>
+              <div class="py-4 d-flex align-items-center justify-content-between"><span>Payment Process</span>
+                <h5 class="fw-bold">Bank</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div> <img class="w-100 h-100 rounded-3" src="Images/deal-01.jpg" alt=""></div>
+          </div>
+          <div class="col-lg-3 d-flex flex-column justify-content-between">
+            <div class="text">
+              <h6 class="mt-0 mb-4 fw-bold">Extra Info About Property</h6>
+              <p class="m-0 lh-lg">This beautiful apartment offers spacious living areas, modern amenities, and a convenient location for comfortable living.</p>
+              <p class="my-4 lh-lg">When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.</p>
+            </div>
+            <div class="px-2 mb-2 spatial-btn"><span><i class="fa-solid fa-calendar"></i></span><a class="content" href="property-details.html">Schedule a visit</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="property py-5 my-5">
+      <div class="container">
+        <div class="main-header mb-5 text-center"><span class="mx-auto" style="width: fit-content">Properties</span>
+          <h2 class="fw-bold mt-3">We Provide The Best<br>Property You Like</h2>
+        </div>
+        <div class="row g-5 mb-5"> 
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-01.jpg" alt=""></a>
+              <div class="vila-body py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Luxury Villa</span><span class="primary fw-bold fs-5">$2.264.000</span></div><a class="fs-5 fw-bold" href="property-details.html">18 New Street Miami, OR 97219</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>8</b></span><span>Bathrooms: <b>8</b></span><span>Area: <b>545m2</b></span><span>Floor: <b>3</b></span><span>Parking: <b>6 spots</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-02.jpg" alt=""></a>
+              <div class="vila-body py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Luxury Villa</span><span class="primary fw-bold fs-5">$1.180.000</span></div><a class="fs-5 fw-bold" href="property-details.html">54 Mid Street Florida, OR 27001</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>6</b></span><span>Bathrooms: <b>5</b></span><span>Area: <b>450m2</b></span><span>Floor: <b>3</b></span><span>Parking: <b>8 spots</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-03.jpg" alt=""></a>
+              <div class="vila-body py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Luxury Villa</span><span class="primary fw-bold fs-5">$1.460.000</span></div><a class="fs-5 fw-bold" href="property-details.html">26 Old Street Miami, OR 38540</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>5</b></span><span>Bathrooms: <b>4</b></span><span>Area: <b>225m2</b></span><span>Floor: <b>3</b></span><span>Parking: <b>10 spots</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-04.jpg" alt=""></a>
+              <div class="vila-body py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Apartment</span><span class="primary fw-bold fs-5">$584.500</span></div><a class="fs-5 fw-bold" href="property-details.html">12 New Street Miami, OR 12650</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>4</b></span><span>Bathrooms: <b>3</b></span><span>Area: <b>125m2</b></span><span>Floor: <b>25th</b></span><span>Parking: <b>2 cars</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-05.jpg" alt=""></a>
+              <div class="vila-body py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Penthouse</span><span class="primary fw-bold fs-5">$925.600</span></div><a class="fs-5 fw-bold" href="property-details.html">34 Beach Street Miami, OR 42680</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>4</b></span><span>Bathrooms: <b>4</b></span><span>Area: <b>180m2</b></span><span>Floor: <b>38th</b></span><span>Parking: <b>2 cars</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-06.jpg" alt=""></a>
+              <div class="vila-body py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Modern Condo</span><span class="primary fw-bold fs-5">$450.000</span></div><a class="fs-5 fw-bold" href="property-details.html">22 New Street Portland, OR 16540</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>3</b></span><span>Bathrooms: <b>2</b></span><span>Area: <b>165m2</b></span><span>Floor: <b>26th</b></span><span>Parking: <b>3 cars</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="container">
+        <div class="main-header mb-4 text-center"> <span class="mx-auto" style="width: fit-content">Contact Us</span>
+          <h2 class="fw-bold mt-3 text-light">Get In Touch With <br>Our Agents</h2>
+        </div>
+      </div>
+    </div>
+    <div class="contact-content mb-5 pb-5"> 
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col-lg-7"> 
+            <div> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth" frameborder="0" width="100%" height="500px" style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);"> </iframe>
+            </div>
+            <div class="d-block d-lg-flex align-items-center gap-5 mt-5">
+              <div class="info p-4 rounded-3 d-flex align-items-center gap-4 mw-50 mb-4 mb-lg-0"><img src="Images/phone-icon.png" alt="">
+                <p class="fw-bold fs-5 m-0">010-020-0340<span class="d-block">Phone Number</span></p>
+              </div>
+              <div class="info p-4 rounded-3 d-flex align-items-center gap-4 mw-50"><img src="Images/email-icon.png" alt="">
+                <p class="fw-bold fs-5 m-0">info@villa.co<span class="d-block">Business Email</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <form class="rounded-3 bg-white mt-5 mt-lg-0" action="">
+              <div class="mb-4">
+                <label for="">Full Name</label>
+                <input class="form-control mt-2 rounded-pill w-100" type="text" placeholder="Your Name..." required>
+              </div>
+              <div class="mb-4"> 
+                <label for="">Email Address</label>
+                <input class="form-control mt-2 rounded-pill w-100" type="text" placeholder="Your Email..." required>
+              </div>
+              <div class="mb-4"> 
+                <label for="">Subject</label>
+                <input class="form-control mt-2 rounded-pill w-100" type="text" placeholder="Your Subject..." required>
+              </div>
+              <div class="pb-5"> 
+                <label for="">Message</label>
+                <textarea class="form-control mt-2 rounded-4 w-100" name="" placeholder="Your Message..." required></textarea>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5">Contact Us</button>
+              <script src="JS/index.js">  </script>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="p-4">
+      <div class="text-center">
+        <p class="my-3">Copyright &copy; 2025 Villa Agency Co., Ltd. All rights reserved.</p>
+        <p>Design: <a href="https://templatemo.com/" target="_black">TemplateMo </a></p>
+      </div>
+    </footer>
+  </body>
+  <script src="JS/bootstrap.bundle.min.js"></script>
+</html>

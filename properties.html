@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
+    <title>Properties</title>
+    <link rel="stylesheet" href="sass/properties.css">
+    <link rel="stylesheet" href="sass/bootstrap.min.css">
+    <link rel="stylesheet" href="sass/all.min.css">
+  </head>
+  <body>
+    <header> 
+      <div class="info d-none d-md-block border-bottom"> 
+        <div class="container d-flex justify-content-between align-items-center py-2"> 
+          <div class="mail d-flex align-items-center gap-2">
+            <div><i class="fa-solid fa-envelope primary px-2 fs-5"> </i><a href="#"> info@company.com</a></div>
+            <div> <i class="fa-solid fa-map primary px-2 fs-5"></i><a href="#"> Sunny Isles Beach, FL 33160</a></div>
+          </div>
+          <div class="social"><a class="mx-1" href="#"> <i class="fa-brands fa-facebook-f"></i></a><a class="mx-1" href="#"> <i class="fa-brands fa-twitter"></i></a><a class="mx-1" href="#"> <i class="fa-brands fa-instagram"></i></a><a class="mx-1" href="#"> <i class="fa-brands fa-linkedin-in"></i></a></div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container py-3"> <a class="logo fs-2 text-uppercase fw-bold text-dark" href="index.html">Villa</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item px-2"><a class="nav-link Home active" aria-current="page" href="index.html">Home</a></li>
+              <li class="nav-item px-2"><a class="nav-link Properties" aria-current="page" href="properties.html">Properties</a></li>
+              <li class="nav-item px-2"><a class="nav-link PropertyDetails" aria-current="page" href="property-details.html">Property Details</a></li>
+              <li class="nav-item px-2"><a class="nav-link ContactUs" aria-current="page" href="contact.html">Contact Us</a></li>
+              <li class="nav-item px-2 spatial-btn"><span><i class="fa-solid fa-calendar"></i></span><a class="nav-link content" aria-current="page" href="index.html"> Schedule a visit</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="JS/header.js"></script>
+    <script>
+      document
+          .querySelectorAll("header nav .nav-link")
+          .forEach((link) => link.classList.remove("active"));
+      
+      
+      document
+          .querySelector(`header nav .${document.title.split(" ").join("")}`).classList.add("active");
+    </script>
+    <div class="landing text-center">
+      <div class="link bg-white mx-auto"><span> <a class="text-uppercase" href="index.html">home </a>/ PROPERTIES</span></div>
+      <h1 class="mt-5 text-light">PROPERTIES</h1>
+    </div>
+    <div class="work my-5 py-5">
+      <div class="container">
+        <div class="d-flex flex-wrap mb-5 gap-4 align-items-center justify-content-center"> <span class="main-btn active" data-prop=".vila-box">Show All</span><span class="main-btn" data-prop=".apartment">Apartment</span><span class="main-btn" data-prop=".vila">Vila House</span><span class="main-btn" data-prop=".penthouse">Penthouse</span></div>
+        <div class="row g-5 mb-5 position-relative">
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-01.jpg" alt=""></a>
+              <div class="vila-body vila py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Luxury Villa</span><span class="primary fw-bold fs-5">$2.264.000</span></div><a class="fs-5 fw-bold" href="property-details.html">18 New Street Miami, OR 97219</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>8</b></span><span>Bathrooms: <b>8</b></span><span>Area: <b>545m2</b></span><span>Floor: <b>3</b></span><span>Parking: <b>6 spots</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-02.jpg" alt=""></a>
+              <div class="vila-body vila py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Luxury Villa</span><span class="primary fw-bold fs-5">$1.180.000</span></div><a class="fs-5 fw-bold" href="property-details.html">54 Mid Street Florida, OR 27001</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>6</b></span><span>Bathrooms: <b>5</b></span><span>Area: <b>450m2</b></span><span>Floor: <b>3</b></span><span>Parking: <b>8 spots</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box vila p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-03.jpg" alt=""></a>
+              <div class="vila-body py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Luxury Villa</span><span class="primary fw-bold fs-5">$1.460.000</span></div><a class="fs-5 fw-bold" href="property-details.html">26 Old Street Miami, OR 38540</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>5</b></span><span>Bathrooms: <b>4</b></span><span>Area: <b>225m2</b></span><span>Floor: <b>3</b></span><span>Parking: <b>10 spots</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box apartment p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-04.jpg" alt=""></a>
+              <div class="vila-body py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Apartment</span><span class="primary fw-bold fs-5">$584.500</span></div><a class="fs-5 fw-bold" href="property-details.html">12 New Street Miami, OR 12650</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>4</b></span><span>Bathrooms: <b>3</b></span><span>Area: <b>125m2</b></span><span>Floor: <b>25th</b></span><span>Parking: <b>2 cars</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box penthouse p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-05.jpg" alt=""></a>
+              <div class="vila-body py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Penthouse</span><span class="primary fw-bold fs-5">$925.600</span></div><a class="fs-5 fw-bold" href="property-details.html">34 Beach Street Miami, OR 42680</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>4</b></span><span>Bathrooms: <b>4</b></span><span>Area: <b>180m2</b></span><span>Floor: <b>38th</b></span><span>Parking: <b>2 cars</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-06.jpg" alt=""></a>
+              <div class="vila-body py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Modern Condo</span><span class="primary fw-bold fs-5">$450.000</span></div><a class="fs-5 fw-bold" href="property-details.html">22 New Street Portland, OR 16540</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>3</b></span><span>Bathrooms: <b>2</b></span><span>Area: <b>165m2</b></span><span>Floor: <b>26th</b></span><span>Parking: <b>3 cars</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box vila p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-01.jpg" alt=""></a>
+              <div class="vila-body py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Luxury Villa</span><span class="primary fw-bold fs-5">$2.264.000</span></div><a class="fs-5 fw-bold" href="property-details.html">18 New Street Miami, OR 97219</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>8</b></span><span>Bathrooms: <b>8</b></span><span>Area: <b>545m2</b></span><span>Floor: <b>3</b></span><span>Parking: <b>6 spots</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box vila p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-02.jpg" alt=""></a>
+              <div class="vila-body py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Luxury Villa</span><span class="primary fw-bold fs-5">$1.180.000</span></div><a class="fs-5 fw-bold" href="property-details.html">54 Mid Street Florida, OR 27001</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>6</b></span><span>Bathrooms: <b>5</b></span><span>Area: <b>450m2</b></span><span>Floor: <b>3</b></span><span>Parking: <b>8 spots</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="vila-box vila p-4 rounded"><a class="d-block" href="property-details.html"><img class="w-100 h-100 rounded-3" src="Images/property-03.jpg" alt=""></a>
+              <div class="vila-body py-3 border-bottom">
+                <div class="d-flex align-items-center justify-content-between my-3"><span class="type">Luxury Villa</span><span class="primary fw-bold fs-5">$1.460.000</span></div><a class="fs-5 fw-bold" href="property-details.html">26 Old Street Miami, OR 38540</a>
+                <div class="info d-flex flex-wrap gap-3 pt-4"> <span>Bedrooms: <b>5</b></span><span>Bathrooms: <b>4</b></span><span>Area: <b>225m2</b></span><span>Floor: <b>3</b></span><span>Parking: <b>10 spots</b></span></div>
+              </div>
+              <button class="secondary-btn rounded-pill mt-5 d-block mx-auto">Schedule a visit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pagination align-items-center justify-content-center mb-5 pb-5">
+      <div class="d-flex gap-3"><span class="active">1</span><span>2</span><span>3</span><span>>></span></div>
+    </div>
+    <script src="JS/properties.js"> </script>
+    <footer class="p-4">
+      <div class="text-center">
+        <p class="my-3">Copyright &copy; 2025 Villa Agency Co., Ltd. All rights reserved.</p>
+        <p>Design: <a href="https://templatemo.com/" target="_black">TemplateMo </a></p>
+      </div>
+    </footer>
+  </body>
+  <script src="JS/bootstrap.bundle.min.js"></script>
+</html>

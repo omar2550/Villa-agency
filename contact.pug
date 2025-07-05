@@ -1,0 +1,61 @@
+extends index
+block pageTitleAndStyle   
+    title Contact Us
+    link(rel="stylesheet" href="sass/contact.css")
+include includes/mixins
+block content
+    +landing("Contact Us")
+    .contact.my-5.py-5.mb-5.pb-5 
+        .container.my-5
+            .row.pb-5
+                .col-lg-6
+                    .main-header.mb-5
+                        span Contact Us
+                        h2.fw-bold.mt-3 Get In Touch
+                            br 
+                            | With Our Agents
+                    p.text.m-0.lh-lg When you really need to download free CSS templates, please remember our website TemplateMo. Also, tell your friends about our website. Thank you for visiting. There is a variety of Bootstrap HTML CSS templates on our website. If you need more information, please contact us.
+                    .mt-5
+                        .info.p-4.rounded-3.d-flex.align-items-center.gap-4.mb-4
+                            img(src="Images/phone-icon.png" alt="")
+                            p.fw-bold.fs-5.m-0 010-020-0340
+                                span.d-block Phone Number
+                        .info.p-4.rounded-3.d-flex.align-items-center.gap-4
+                            img(src="Images/email-icon.png" alt="") 
+                            p.fw-bold.fs-5.m-0 info@villa.co
+                                span.d-block Business Email
+                .col-lg-6
+                    form(action="" class="rounded-3 bg-white mt-5 mt-lg-0")
+                        div.mb-4
+                            label(for="") Full Name
+                            input(type="text" placeholder="Your Name...",
+                            required, 
+                            class="form-control mt-2 rounded-pill w-100"
+                            )
+                        div.mb-4 
+                            label(for="") Email Address
+                            input(type="text" placeholder="Your Email...",
+                            required, 
+                            class="form-control mt-2 rounded-pill w-100"
+                            )
+                        div.mb-4 
+                            label(for="") Subject
+                            input(type="text" placeholder="Your Subject...",
+                            required, 
+                            class="form-control mt-2 rounded-pill w-100"
+                            )
+                        div.pb-5 
+                            label(for="") Message
+                            textarea(name="", 
+                            placeholder="Your Message...",
+                            required, 
+                            class="form-control mt-2 rounded-4 w-100",
+                            )
+                        button.secondary-btn.rounded-pill.mt-5 Contact Us
+            .mt-5 
+                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth",
+                frameborder="0",
+                width="100%",
+                height="500px",
+                style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);" 
+                )

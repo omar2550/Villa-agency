@@ -1,0 +1,44 @@
+@use "../components/spatial-btn";
+
+header {
+  .mail {
+    a {
+      font-size: 14px;
+      color: #7a7a7a;
+      margin-top: 1px;
+    }
+  }
+  .social {
+    a {
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      text-align: center;
+      color: #fff;
+      background-color: #cdcdcd;
+      border-radius: 50%;
+      line-height: 25px;
+      font-size: 12px;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        background-color: var(--primary-color);
+      }
+    }
+  }
+  nav {
+    background-color: #fff;
+    z-index: 100;
+    width: 100%;
+    .collapse {
+      a {
+        transition: 0.3s ease-in-out;
+        font-size: 15px;
+        font-weight: 600;
+        &:hover,
+        &.active {
+          color: var(--primary-color) !important;
+        }
+      }
+    }
+  }
+}
